@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnSelectPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Photo"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/viewImage"
+        android:layout_alignEnd="@+id/btnUploadPhoto" />
+
+    <ImageView
+        android:id="@+id/viewImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editText_Des"
+        android:layout_width="324dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:text="Description"
+        android:layout_below="@+id/editText_Name"
+        android:layout_alignStart="@+id/editText_Name" />
+
+    <EditText
+        android:id="@+id/editText_Location"
+        android:layout_width="324dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:text="Location"
+        android:layout_below="@+id/editText_Des"
+        android:layout_alignStart="@+id/editText_Name" />
+
+    <EditText
+        android:id="@+id/editText_Name"
+        android:layout_width="323dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:text="Name"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/btnSelectPhoto"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnUploadPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Photo"
+        android:layout_below="@+id/editText_Location"
+        android:layout_centerHorizontal="true"
+        android:onClick="upload_photo"/>
+
+</RelativeLayout>
